@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+}
 
 .header {
     width: 100%;
@@ -16,11 +19,13 @@
 .logo_lupa {
     display: flex;
     gap: 41px;
+    align-items: center;
 }
 
 .nav {
     display: flex;
     gap: 33px;
+    align-items: center;
 }
 
 .body1 {
@@ -48,9 +53,9 @@ h2 {
 }
 
 .body2 {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
+    justify-items: center;
 }
 
 .for {
@@ -63,34 +68,55 @@ h2 {
 }
 
 .all_body2_text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-    flex-wrap: nowrap;
 }
 
 .up_text {
-    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 .down_text {
-    color: #F16D7F;
+    font-style: normal;
+    font-weight: 700;
     font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #F16D7F;
 }
 
-.women {}
+.item {
+    position: relative;
+}
 
-.men {}
-
-.kids {}
-
-.Acc {}
+.item_a {
+    min-height: 180px;
+    grid-column: 1 / -1;
+}
 
 .body3 {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
+    justify-items: center;
 }
 
 .head_body3 {
@@ -156,4 +182,24 @@ h2 {
     border-width: 1px;
     background-color: #FFFFFF;
     padding: 15px 39px 14px;
+}
+
+
+@media(min-width: 768px) and (max-width: 1024px) {
+    .header {
+        width: 1024px;
+    }
+
+    .body1 {
+        width: 100vw;
+    }
+
+    .body3 {
+        display: grid;
+        justify-items: stretch;
+    }
+
+    .body2 {
+        display: grid;
+    }
 }
