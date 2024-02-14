@@ -203,3 +203,49 @@ h2 {
         display: grid;
     }
 }
+
+@media (max-width: 767px) {
+
+    .container {
+        max-width: 767px;
+        min-width: 343px;
+    }
+
+    .logo_lupa {
+        margin: 16px 18px;
+    }
+
+    .nav {
+        margin: 25px 16px;
+        gap: 0;
+    }
+
+    .body1 {
+        width: 375px;
+        height: 363px;
+    }
+
+    .Human {
+        display: none;
+    }
+
+    .body2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgL {
+        max-width: 343px;
+        min-height: 111px;
+    }
+
+    .body3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+    }
+}
