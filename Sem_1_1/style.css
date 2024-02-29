@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  background-color: #222222;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo_lupa {
+  display: flex;
+  gap: 41px;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 33px;
+  align-items: center;
+}
+
+.header2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F1E4E6;
+  width: 100vw;
+  height: 150px;
+}
+
+.redtext {
+  font-size: 16px;
+  color: #F16D7F;
+}
+
+.body2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.button {
+  font-size: 16px;
+  color: #F16D7F;
+  border-color: #F26376;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #FFFFFF;
+  padding: 15px 39px 14px;
+}
+
+.body3 {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 48px;
+}
+
+.head_body3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.up_text_b3 {
+  font-size: 30px;
+  color: #222222;
+}
+
+.down_text_b3 {
+  font-size: 14px;
+  color: #9F9F9F;
+  width: 320px;
+}
+
+.center {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 80%;
+  gap: 12px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F8F8F8;
+}
+
+.up_text_c {
+  font-size: 13px;
+  color: #000000;
+}
+
+.med_text_c {
+  font-size: 14px;
+  color: #5D5D5D;
+}
+
+.down_text_c {
+  font-size: 16px;
+  color: #F16D7F;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 95px;
+}
+
+.button {
+  font-size: 16px;
+  color: #F16D7F;
+  border-color: #F26376;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #FFFFFF;
+  padding: 15px 39px 14px;
+}
+
+.foot1 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: #222222;
+  width: 100vw;
+  height: 341px;
+}
+
+.itemF {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.h2Footer1 {
+  color: #FBFBFB;
+  font-size: 20px;
+}
+
+.pFooter1 {
+  color: #FBFBFB;
+  font-size: 14px;
+  text-align: center;
+  width: 360px;
+}
+
+.foot2 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.imgf2 {
+  min-width: 1600px;
+  position: relative;
+}
+
+.itemAllf2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  gap: 225px;
+}
+
+.leftF2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.pFooter2 {
+  text-align: center;
+  width: 360px;
+  color: #222224;
+  font-size: 20px;
+}
+
+.rightF2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.textF2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.buttonF2 {
+  display: flex;
+  border-width: 1px;
+  border-color: Black;
+  overflow: hidden;
+  border-radius: 50px;
+  flex-direction: row;
+  gap: 0px;
+}
+
+.InF2 {
+  background-color: #E1E1E1;
+  border-width: 0px;
+  width: 275px;
+  height: 36px;
+}
+
+.BF2 {
+  background-color: #F16D7F;
+  border-width: 0px;
+  width: 85px;
+  height: 36px;
+}
+
+.h2F2 {
+  text-align: center;
+  color: #222224;
+}
+
+.pF2 {
+  text-align: center;
+  color: #222224;
+  width: 360px;
+}
+
+.foot3 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  background-color: #222224;
+  height: 79px;
+  width: 100vw;
+}
+
+.textFooter3 {
+  font-size: 16px;
+  color: #FBFBFB;
+}
+
+.logoFooter3 {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  max-width: 32px;
+  max-height: 32px;
+}/*# sourceMappingURL=style.css.map */
