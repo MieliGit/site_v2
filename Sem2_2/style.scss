@@ -243,7 +243,53 @@ a {
 
 .body{
 
+    &__center{
+        display: grid;
+        grid-template-columns: repeat(3, 360px);
+        justify-items: center;
+        gap: 16px;
+        padding-bottom: 20px;
+        justify-content: space-evenly;
+    }
+
+    &__item{
+        width: 360px;
+        background-color: #F8F8F8;
+    }
+
+    &__box{
+        padding: 16px 20px 16px 8px;
+    }
+
+    &__textblack{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #000000;
+        
+    }
+
+    &__text{
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color:#5D5D5D;
+    }
+
+    &__price{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $red-color;
+    }
 }
+
 
 .foot1{
     display: flex;
