@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "latolight";
 }
 
 summary {
@@ -51,6 +52,11 @@ a {
   color: #F16D7F;
   font-size: 24px;
 }
+.header2__right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .header2__textright {
   color: #6F6E6E;
   font-size: 14px;
@@ -74,6 +80,7 @@ a {
   box-sizing: border-box;
   width: 360px;
   top: 39px;
+  cursor: pointer;
 }
 .filter[open] {
   background-color: #FFFFFF;
@@ -113,6 +120,7 @@ a {
   padding: 8px 11px 11px 11px;
   border-bottom: 1px solid #EBEBEB;
   border-left: 5px solid #F16D7F;
+  cursor: pointer;
 }
 .filter__item[open] {
   font-size: 14px;
@@ -181,6 +189,7 @@ a {
   letter-spacing: 0em;
   text-align: left;
   color: #6F6E6E;
+  cursor: pointer;
 }
 .sort__box {
   display: flex;
@@ -267,7 +276,7 @@ a {
   align-items: center;
 }
 .foot2__img {
-  min-width: 1600px;
+  min-width: 100vw;
   position: relative;
 }
 .foot2__item {
