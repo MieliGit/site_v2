@@ -147,7 +147,7 @@ a {
   align-items: center;
 }
 .foot2__img {
-  min-width: 1600px;
+  min-width: 100vw;
   position: relative;
 }
 .foot2__item {
