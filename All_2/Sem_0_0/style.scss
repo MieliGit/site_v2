@@ -1,0 +1,259 @@
+// Переменные
+$red-color: #F16D7F;
+$pink-color: #F8F3F4;
+$text-color: #6F6E6E;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'latolight';
+}
+
+html{   
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: #222222;
+    height: 75px;
+
+    &__iconleft{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__iconright{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;        
+    }
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $pink-color;
+    width: 100vw;
+    height: 765px;
+
+    &__right{
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    &__textright{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__h{
+        font-size: 3rem;
+        font-weight: 900;
+        line-height: 57.6px;
+        text-align: left;
+        color:#222222;
+    }
+
+    &__p{
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 38.4px;
+        text-align: left;
+        color: #222222;
+
+        &_special{
+            color: $red-color;
+        }
+    }
+}
+
+.bodyup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 100vw;
+    padding: 100px 0px;
+
+
+
+    &__up{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;  
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__itemup{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__imgup{
+        position: relative;
+        width: 360px;
+        height: 260px;
+
+    }
+
+    &__textbox{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__textup{
+
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: center;
+        color: #FFFFFF;
+        
+    }
+
+    &__textdown{
+        
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 28.8px;
+        text-align: center;
+        color: $red-color;
+
+    }
+
+    &__itemdown{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__imgdown{
+        position: relative;
+    }
+
+    &__textboxdown{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+.bodydown{
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+
+    &__head{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__h{
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: left;
+        color: #222222;
+    }
+
+    &__p{
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 16.8px;
+        text-align: left;
+        color:#9F9F9F;
+    }
+
+    &__body{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 50px 150px;
+        gap: 20px;
+        justify-content: center;
+        align-items: baseline;
+
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: center;
+        width: 360px;
+        max-height: 590px;
+        background-color: #F8F8F8;
+        
+    }
+
+    &__itemh{
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 15.6px;
+        text-align: left;
+        color: #000000;
+    }
+
+    &__itemp{
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 16.8px;
+        text-align: left;
+        color: #5D5D5D;
+    }
+
+    &__price{
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: left;
+        color: $red-color;
+    }
+
+    &__button{
+        font-size: 1rem;
+        color: #F16D7F;
+        border-color: #F26376;
+        border-style: solid;
+        border-width: 1px;
+        background-color: #FFFFFF;
+        padding: 15px 39px 14px;
+        cursor: pointer;
+    }
+
+}
