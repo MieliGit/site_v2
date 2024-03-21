@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    background-color: #222222;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo_lupa {
+    display: flex;
+    gap: 41px;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 33px;
+    align-items: center;
+}
+
+/* Кнопка выпадающего списка */
+.dropbtn {
+    position: relative;
+    border: none;
+}
+
+.imDownList {
+    position: absolute;
+    align-items: center;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Показать выпадающее меню при наведении курсора */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.body1 {
+    display: flex;
+    justify-content: center;
+    background-color: #F1E4E6;
+    width: 100%;
+    margin-bottom: 65px;
+}
+
+.body_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 16px;
+}
+
+h2 {
+    display: flex;
+}
+
+
+.Fashion {
+    color: #F16D7F;
+}
+
+.body2 {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 96px;
+}
+
+.for {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 30px;
+}
+
+.all_body2_text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.up_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.down_text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #F16D7F;
+}
+
+.item {
+    position: relative;
+}
+
+.item_a {
+    min-height: 180px;
+    grid-column: 1 / -1;
+}
+
+.body3 {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 48px;
+}
+
+.head_body3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.up_text_b3 {
+    font-size: 30px;
+    color: #222222;
+}
+
+.down_text_b3 {
+    font-size: 14px;
+    color: #9F9F9F;
+    width: 320px;
+}
+
+.center {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80%;
+    gap: 12px;
+}
+
+.item {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F8F8F8;
+}
+
+.up_text_c {
+    font-size: 13px;
+    color: #000000;
+}
+
+.med_text_c {
+    font-size: 14px;
+    color: #5D5D5D;
+}
+
+.down_text_c {
+    font-size: 16px;
+    color: #F16D7F;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 95px;
+}
+
+.button {
+    font-size: 16px;
+    color: #F16D7F;
+    border-color: #F26376;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #FFFFFF;
+    padding: 15px 39px 14px;
+}
+
+.foot1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #222222;
+    width: 100vw;
+    height: 341px;
+}
+
+.itemF {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.h2Footer1 {
+    color: #FBFBFB;
+    font-size: 20px;
+}
+
+.pFooter1 {
+
+    color: #FBFBFB;
+    font-size: 14px;
+    text-align: center;
+    width: 360px;
+}
+
+.foot2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imgf2 {
+    min-width: 1600px;
+    position: relative;
+}
+
+.itemAllf2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    gap: 225px;
+}
+
+.leftF2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.pFooter2 {
+    text-align: center;
+    width: 360px;
+    color: #222224;
+    font-size: 20px;
+}
+
+.rightF2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.textF2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.buttonF2 {
+    display: flex;
+    border-width: 1px;
+    border-color: Black;
+    overflow: hidden;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    flex-direction: row;
+    gap: 0px;
+
+}
+
+.InF2 {
+    background-color: #E1E1E1;
+    border-width: 0px;
+    width: 275px;
+    height: 36px;
+}
+
+.BF2 {
+    background-color: #F16D7F;
+    border-width: 0px;
+    width: 85px;
+    height: 36px;
+}
+
+.h2F2 {
+    text-align: center;
+    color: #222224;
+}
+
+.pF2 {
+    text-align: center;
+    color: #222224;
+    width: 360px;
+}
+
+.foot3 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background-color: #222224;
+    height: 79px;
+    width: 100vw;
+}
+
+.textFooter3 {
+    font-size: 16px;
+    color: #FBFBFB;
+}
+
+.logoFooter3 {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    max-width: 32px;
+    max-height: 32px;
+}
+
+@media(min-width: 768px) and (max-width: 1024px) {
+    .header {
+        width: 1024px;
+    }
+
+    .body1 {
+        width: 100vw;
+    }
+
+    .body3 {
+        display: grid;
+        justify-items: stretch;
+    }
+
+    .body2 {
+        display: grid;
+    }
+
+    .foot1 {
+        max-width: 1024px;
+    }
+
+    .foot2 {
+        max-width: 1024px;
+    }
+
+    .foot3 {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .container {
+        max-width: 767px;
+        min-width: 343px;
+    }
+
+    .logo_lupa {
+        margin: 16px 18px;
+    }
+
+    .nav {
+        margin: 25px 16px;
+        gap: 0;
+    }
+
+    .body1 {
+        width: 375px;
+        height: 363px;
+    }
+
+    .Human {
+        display: none;
+    }
+
+    .body2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgL {
+        max-width: 343px;
+        min-height: 111px;
+    }
+
+    .body3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foot1 {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .foot2 {}
+
+    .imgf2 {
+        width: 360px;
+        height: 550px;
+    }
+
+    .itemAllf2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foot3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
