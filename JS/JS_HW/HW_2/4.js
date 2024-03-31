@@ -24,3 +24,18 @@
 */
 
 // Здесь пишем решение, данный комментарий необходимо стереть.
+
+
+let personalNum = prompt('Введите целое число');
+
+if(Number.isInteger(personalNum)){
+    
+    let edentiaNum = personalNum % 10;
+    let tenNum = (Math.trunc(personalNum / 10 )) % 10;
+    let hundredNum = (Math.trunc(personalNum / 100 )) % 10;
+
+    console.log(`В числе ${personalNum} количество сотен: ${hundredNum}, десятков: ${tenNum}, единиц: ${edentiaNum}`);
+    
+}else{
+    alert('Введено не целое число!');
+}
