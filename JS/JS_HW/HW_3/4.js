@@ -25,9 +25,8 @@ function sum(numFour, numFive) {
 function dif(numFour, numFive) {
     if(numFour > numFive){
         return numFour - numFive;
-    }else{
-        return numFive - numFour;
     }
+    return numFive - numFour;
 }
 
 function div(numFour, numFive) {
@@ -35,7 +34,7 @@ function div(numFour, numFive) {
 }
 
 function multi(numFour, numFive) {
-    return numFour*numFive;
+    return numFour * numFive;
 }
 
 let userNumFour = Number(prompt('Введите первое число для проведение операций'));

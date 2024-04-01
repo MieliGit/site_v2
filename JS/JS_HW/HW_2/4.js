@@ -26,7 +26,7 @@
 // Здесь пишем решение, данный комментарий необходимо стереть.
 
 
-let personalNum = prompt('Введите целое число');
+let personalNum = Number(prompt('Введите целое число'));
 
 if(Number.isInteger(personalNum)){
     

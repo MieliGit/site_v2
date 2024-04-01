@@ -8,7 +8,7 @@
 */
 
 function cubeNum (num) {
-    return num**3;
+    return num ** 3;
 }
 
 const userNum = prompt('Введите число, которое желаете преобразовать  вкубическое');

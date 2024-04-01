@@ -11,20 +11,11 @@
 */
 
 function examinationNum(numFirst, numSecond, numThrid) {
-
-    if(numFirst > numSecond && numFirst > numThrid){
-        return numFirst;
-    }else{
-        if(numSecond > numThrid){
-            return numSecond;
-        }else{
-            return numThrid;
-        }
-    }
+    return Math.max(numFirst, numSecond, numThrid);
 }
 
-let numUserFirst = prompt('Введите первое число для сравнения')
-let numUserSecond = prompt('Введите второе число для сравнения')
-let numUserThrid = prompt('Введите третье число для сравнения')
+let numUserFirst = prompt('Введите первое число для сравнения');
+let numUserSecond = prompt('Введите второе число для сравнения');
+let numUserThrid = prompt('Введите третье число для сравнения');
 
-alert(`Максимальное значение среди чисел ${numUserFirst}, ${numUserSecond}, ${numUserThrid} равно ${examinationNum(numUserFirst, numUserSecond, numUserThrid)}.`)
+alert(`Максимальное значение среди чисел ${numUserFirst}, ${numUserSecond}, ${numUserThrid} равно ${examinationNum(numUserFirst, numUserSecond, numUserThrid)}.`);

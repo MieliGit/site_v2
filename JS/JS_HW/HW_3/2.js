@@ -13,12 +13,12 @@ function salaryFix(salary) {
     return salary*0.87;
 }
 
-let userSalary = Number(prompt('Введите число от 100 до 300'))
+let userSalary = Number(prompt('Введите число от 100 до 300'));
 
 if(userSalary < 100 || userSalary > 300){
-    alert('Число введено неверно')
+    alert('Число введено неверно');
 }else{
-    console.log(userSalary)
-    console.log(`Размер заработной платы за вычетом налогов равен ${salaryFix(userSalary)}`)
+    console.log(userSalary);
+    console.log(`Размер заработной платы за вычетом налогов равен ${salaryFix(userSalary)}`);
 }
 
