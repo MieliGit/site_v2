@@ -1,0 +1,39 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.videost{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+
+
+    &__play{
+        background-image: url(/JS/JS_HW/HW2_7/img/play.svg);
+        width: 100px;
+        height: 100px;
+    }
+
+    &__pause{
+        background-image: url(/JS/JS_HW/HW2_7/img/pause.svg);
+        width: 100px;
+        height: 100px;
+    }
+
+    &__range{
+        width: 80vw;
+    }
+}
+
