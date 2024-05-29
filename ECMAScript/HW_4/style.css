@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.container {
+  width: 100px;
+  height: 100px;
+}
+
+.colorChange {
+  background-color: #FFA07A;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  background-color: #F08080;
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */
