@@ -5,12 +5,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/MieliGit/site_v2/tree/bf1ccc55c232b94072159590acbed392cb7f6db5/Node/Homework/HW_2_2"
   },
-
   "keywords": [],
   "author": "Daniil_Zakharov",
   "license": "ISC",
