@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "number-precision": "^1.6.0"
+  },
+  "name": "site-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "./index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

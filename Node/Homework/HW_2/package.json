@@ -1,0 +1,15 @@
+{
+  "name": "daniil-nametest",
+  "version": "1.0.0",
+  "main": "mynpm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "daniil-nametest": "^1.0.0"
+  }
+}
