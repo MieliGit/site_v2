@@ -18,7 +18,7 @@ const scheduleList = `
 [
   {
     "id": "1",
-    "title": "Занятие 1",
+    "title": "Рисование",
     "time": "8:00 - 9:30",
     "max_participants": "20",
     "actual_participants": "10"
@@ -26,7 +26,7 @@ const scheduleList = `
   },
   {
     "id": "2",
-    "title": "Занятие 2",
+    "title": "Пение",
     "time": "9:30 - 11:00",
     "max_participants": "25",
     "actual_participants": "10"
@@ -34,7 +34,7 @@ const scheduleList = `
   },
   {
     "id": "3",
-    "title": "Занятие 3",
+    "title": "Игра на гитаре",
     "time": "11:00 - 12:30",
     "max_participants": "20",
     "actual_participants": "5"
@@ -42,7 +42,7 @@ const scheduleList = `
   },
   {
     "id": "4",
-    "title": "Занятие 4",
+    "title": "Игра на скрипки",
     "time": "12:30 - 14:00",
     "max_participants": "20",
     "actual_participants": "20"
@@ -50,7 +50,7 @@ const scheduleList = `
   },
   {
     "id": "5",
-    "title": "Занятие 5",
+    "title": "Танцы",
     "time": "14:00 - 15:30",
     "max_participants": "30",
     "actual_participants": "20"
@@ -58,7 +58,7 @@ const scheduleList = `
   },
   {
     "id": "6",
-    "title": "Занятие 6",
+    "title": "Игра на барабанах",
     "time": "15:30 - 17:00",
     "max_participants": "20",
     "actual_participants": "0"
@@ -74,23 +74,20 @@ function creatScheduleList(scheduleData) {
   scheduleData.forEach((item) => {
     scheduleEl.insertAdjacentHTML(
       "beforeend",
-      ` <div class="schedule__content" id= ${item.id}> 
+      ` <div class="schedule__content" id= ${item.title}> 
         <div class="schedule__content-title"> ${item.title}</div>
         <div class="schedule__content-time">Время проведения занятия: ${item.time}</div>
-        <div class="schedule__content-maxparticipants">Общее колличество мест: <span> ${item.max_participants}</span></div>
-        <div class="schedule__content-actualparticipants">Колличество занятых мест: <span>${item.actual_participants}</span></div>
+        <div class="schedule__content-maxparticipants">Общее колличество мест: <span class="schedule__span"> ${item.max_participants}</span></div>
+        <div class="schedule__content-actualparticipants" data-id=${item.id}>Колличество занятых мест: <span class="schedule__span">${item.actual_participants}</span></div>
         <div class="schedule__button">
-          <button class="schedule__button-registration"> Записаться</button>
-          <button class="schedule__button-cancel" data-id="${item.id}"> Отменить запись </button>
+          <button class="schedule__button-registration" id= ${item.id}> Записаться</button>
+          <button class="schedule__button-cancel disabled" data-id="${item.title}"> Отменить запись </button>
         </div>
       `
     );
     if (Number(item.max_participants) === Number(item.actual_participants)) {
       const regButtonEl = document.getElementById(`${item.id}`);
-      const rehButtondisEl = regButtonEl.querySelector(
-        ".schedule__button-registration"
-      );
-      rehButtondisEl.classList.add("disabled");
+      regButtonEl.classList.add("disabled");
     }
   });
 }
@@ -113,15 +110,21 @@ scheduleEl.addEventListener("click", function (e) {
     const actualNumberParticipants = document.querySelector(
       `[data-id="${e.target.id}"]`
     );
-    const span = actualNumberParticipants.querySelector("span");
+    const span = actualNumberParticipants.querySelector(".schedule__span");
     span.textContent = scheduleData[e.target.id - 1].actual_participants;
 
     const registrationButton = document.getElementById(`${e.target.id}`);
+    // if (
+    //   Number(scheduleData[e.target.id - 1].actual_participants) ===
+    //   Number(scheduleData[e.target.id - 1].max_participants)
+    // ) {
+    //   registrationButton.classList.add("disabled");
+    //   registrationButton.nextElementSibling.classList.remove("disabled");
+    // }
     registrationButton.classList.add("disabled");
     registrationButton.nextElementSibling.classList.remove("disabled");
   }
-  if (e.target.classList.contains("button-reject")) {
-    console.log(scheduleData);
+  if (e.target.classList.contains("schedule__button-cancel")) {
     let actualTitle = scheduleData.filter(
       (item) => item.title === e.target.dataset.id
     );
@@ -132,12 +135,19 @@ scheduleEl.addEventListener("click", function (e) {
     const actualNumPracticipants = document.querySelector(
       `[data-id="${index + 1}"]`
     );
-    const span = actualNumPracticipants.querySelector("span");
+    const span = actualNumPracticipants.querySelector(".schedule__span");
     span.textContent = scheduleData[index].actual_participants;
 
     const cancelButton = document.querySelector(
       `[data-id="${e.target.dataset.id}"]`
     );
+
+    //   if (scheduleData[index].actual_participants < 1) {
+    //     cancelButton.classList.add("disabled");
+    //   }
+    //   cancelButton.previousElementSibling.classList.remove("disabled");
+    // }
+
     cancelButton.classList.add("disabled");
     cancelButton.previousElementSibling.classList.remove("disabled");
   }
