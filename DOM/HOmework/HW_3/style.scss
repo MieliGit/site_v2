@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sofia", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #0c0c21;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.head {
+  width: 100%;
+  height: 100px;
+  background-color: #000000;
+}
+.photoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+  border: 2px solid #000000;
+  border-radius: 10px 10px 0 0;
+  width: 600px;
+  height: 600px;
+  padding: 20px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 1px 16px 24px 9px rgba(34, 60, 80, 0.23);
+  -moz-box-shadow: 1px 16px 24px 9px rgba(34, 60, 80, 0.23);
+  box-shadow: 1px 16px 24px 9px rgba(34, 60, 80, 0.23);
+
+  &__imagebox {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+    border: 5px outset #000000;
+
+    &-image {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &-box {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &-box,
+    &-likesBox {
+      border-radius: 15px;
+      border: 2px solid #0c0c21;
+      min-width: 220px;
+      min-height: 110px;
+      padding: 10px;
+    }
+
+    &-photographer {
+      text-align: center;
+      font-size: 30px;
+    }
+
+    &-name {
+      text-align: center;
+      font-size: 15px;
+    }
+
+    &-likesBox {
+      display: flex;
+      flex-direction: row;
+      gap: 55px;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    &-counter {
+      font-size: 20px;
+    }
+
+    &-likeButton {
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+
+    &-svg:hover {
+      fill: #ff0015;
+      transition: 0.6s ease;
+    }
+
+    &-svg:active path {
+      fill: #0c0c21;
+      transition: 0.4s ease;
+    }
+  }
+}
